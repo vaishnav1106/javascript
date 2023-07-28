@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+</head>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<body>
+  
+    <!-- function as object -->
+    <!-- <script>
+         var body = "retun Math.PI * rad *rad"
+         var circle  = new Function("rad",body);
+         alert (circle(5))
+      
+    </script> -->
+    <!-- arrow function -->
+    <script>
+        const Myfunc =(a,b,c)=>{return a*b*c}
+        let product=Myfunc(5,6,2)
+        document.getElementById("demo").innerHTML ="The product Of Three Digit Is " +product;
+    </script>
+
+</body>
+</html>    

@@ -8,6 +8,8 @@
 <p id="demo"></p>
 <p id="demo1"></p>
 <p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
 <body>
     <script>
     
@@ -22,19 +24,48 @@
          
     </script>
     <!-- function expression -->
-    <script>
+    <!-- <script>
         let x= function()
         {
             alert("hello")
         }
         
         document.getElementById("demo1").innerHTML = x();
-    </script>
+    </script> -->
     <!-- function construction -->
     <script>
          var myFunction = new Function("a" , "b","return a+b")
          var y = myFunction(4,3)
-         document.getElementById("demo2").innerHTML = y;
+         document.getElementById("demo2").innerHTML ="The Sum Is " +y;
+    </script>
+    <!-- self invoke function -->
+    <!-- <script>
+        (function()
+        {
+            alert("Hello! Guys")
+        })()
+    </script> -->
+    <!-- Function as value -->
+    <script>
+           function product(a,b)
+           {
+            return a*b
+           }
+           let z =product(4,5)*3
+           document.getElementById("demo3").innerHTML ="The product Is " +z;
+    </script>
+    <!-- function as object -->
+    <!-- <script>
+         var body = "retun Math.PI * rad *rad"
+         var circle  = new Function("rad",body);
+         alert (circle(5))
+      
+    </script> -->
+    <!-- arrow function -->
+    <script>
+        const Myfunc =(a,b,c)=>{return a*b*c}
+        let product=Myfunc(5,6,2)
+        document.getElementById("demo1").innerHTML ="The product Of Three Digit Is " +product;
     </script>
 </body>
 </html>    
