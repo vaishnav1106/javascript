@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Method</title>
+</head>
+<body>
+    <h1>Java Script Object Method</h1>
+    <p id="demo"></p>
+    <button id ="Click" type="button" >Click Me</button>
+
+    <script>
+       let user ={
+        name: "Vaishnav",
+        age : 25,
+       };
+
+       function sayHi(){
+        alert("Hello!");
+       }
+
+       user.message = sayHi; 
+       document.getElementById("demo").innerHTML = "Hi " + user.name;
+       document.getElementById("Click").onclick = user.message ;//new update js onclick is written instead of onClick
+    </script>
+</body>
+</html>
