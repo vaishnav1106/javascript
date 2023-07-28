@@ -16,5 +16,25 @@
         document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studies " + student.studies;
 
     </script>
+    <!-- ANOTHER SCRIPT TYPE WITH NEW KEYWORD -->
+     <script>
+        var student=new Object();
+        student.name ="John";
+        student.age=21;
+        student.studies ="Computer Science";
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studies " + student.studies;
+     </script>
+     <!-- third way of object creation -->
+     <script>
+        function stud(name, age, studies)
+        {
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        }
+        var student=stud("Jhony", 21, "Computer Science");
+        document.getElementById("demo").innerHTML = this.name + " of the age " + this.age + " studies " + this.studies;
+        
+     </script>
 </body>
 </html>
