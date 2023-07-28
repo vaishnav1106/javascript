@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Function</title>
-</head><p id="demo"></p>
-<p id="demoo"></p>
+</head>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
 <body>
     <script>
     
@@ -26,7 +28,13 @@
             alert("hello")
         }
         
-        document.getElementById("demoo").innerHTML = x();
+        document.getElementById("demo1").innerHTML = x();
+    </script>
+    <!-- function construction -->
+    <script>
+         var myFunction = new Function("a" , "b","return a+b")
+         var y = myFunction(4,3)
+         document.getElementById("demo2").innerHTML = y;
     </script>
 </body>
 </html>    
