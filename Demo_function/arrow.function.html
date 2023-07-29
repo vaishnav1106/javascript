@@ -20,11 +20,47 @@
       
     </script> -->
     <!-- arrow function -->
-    <script>
+    <!-- <script>
         const Myfunc =(a,b,c)=>{return a*b*c}
         let product=Myfunc(5,6,2)
         document.getElementById("demo").innerHTML ="The product Of Three Digit Is " +product;
-    </script>
+    </script> -->
 
+    <!--Generator Function  --> 
+    <script>
+        function* fun(){
+            yield 1;
+            yield 2;
+            return 3;
+        }
+        let generator = fun();
+        let one = generator.next();
+        let two = generator.next();
+        let three = generator.next();
+        alert(JSON.stringify(one));
+        alert(JSON.stringify(two));
+        alert(JSON.stringify(three));
+
+
+        // Generate Function generates three 
+        // different numbers in three calls
+        // function* fun() {
+        //     yield 10;
+        //     yield 20;
+        //     yield 30;
+        // }
+        
+        // // Calling the Generate Function
+        // let gen = fun();
+        // console.log(gen.next().value);
+        // console.log(gen.next().value);
+        // console.log(gen.next().value);
+        
+    </script>
+       <!-- Predifined Function  -->
+
+    <script>
+
+    </script>
 </body>
 </html>    
