@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Promisses</title>
+</head>
+<p id="demo"></p>
+<body>
+ <script>
+      let car = new Promise(function(resolve,reject)
+      {
+        fuel_full =true;
+        if(fuel_full)
+        resolve("Car is ready to go"+ fuel_full); //if the condition satisfies then it will execute this statement
+        else
+        reject()
+      });
+
+      car.then(function()
+      {
+        document.write("The fuel tank is full . Happy Driving ")
+      })
+      .catch(function()
+      {
+        document.write("the fuel tank is not full . ")
+      })
+ </script>
+</body>
+</html>
