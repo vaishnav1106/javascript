@@ -19,13 +19,13 @@
     </script>
     <!-- closures scope -->
     <script>
-         var a =30;
+         var a =30;//global varable
          function first()
          {
-            var b=20;
+            var b=20;//variable under  first()
             function second ()
             {
-                var c = a+b;
+                var c = a+b; //here we call the global and variable under first()
                 return c
             }
             return second();
