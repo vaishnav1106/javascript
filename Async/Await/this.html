@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Async/Await</title>
+</head>   
+    </head><h1>JavaScript Async/Await</h1>
+</head>
+<body>
+  <!-- <script>
+            var value = 50
+            function Myfunction(){
+            var value = 100
+            alert("Value: "+ value)//  here  the value under the function is called
+            alert("This value: " + this.value)//where as here the global value is called, as use .this
+            } 
+            Myfunction()
+  </script> -->
+   
+    <script>
+     const random =
+     {
+      name: "Tutorial",// an object creation
+      video:["JavaScript","this", "keyword"],
+      info() {
+       this.video.forEach(function(tag)
+       {
+        console.log(this.name,tag)
+       },
+       this)
+     
+      
+      }
+     }
+     random.info()
+    </script>
+
+
+</body>
+</html>
